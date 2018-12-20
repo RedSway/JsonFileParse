@@ -82,6 +82,7 @@ public class JsonFileParse {
                 stringBuilder.append(s).append("\n");
             }
             fileWriter.write(stringBuilder.toString());
+            fileWriter.flush();
         } catch (IOException e) {
             e.printStackTrace();
         }
